@@ -10,10 +10,10 @@ btn.addEventListener('click',function(){
         return;
     }
 
-    tasksContainer.innerHTML+=`<div class="task">${inputValue}</div>`;
+    tasksContainer.innerHTML+=`<div class="task" onclick="this.style.textDecoration='line-through'">${inputValue}</div>`;
+
     input.value='';
 });
-
 deleteBtn.addEventListener('click',function(){
     tasksContainer.innerHTML='';
 });
