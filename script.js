@@ -1,7 +1,13 @@
-let btn= document.querySelector('.add-icon');
+let btn=document.querySelector('.add-icon');
 let input=document.querySelector('#add-input');
-let task=document.querySelector('.tasks');
+let tasksContainer=document.querySelector('.tasks');
+
 btn.addEventListener('click',function(){
     let inputValue=input.value;
-    task.innerHTML += `<div class="task">${inputValue}</div>`;
-})
+
+    if(inputValue.trim() === ''){
+        return;
+    }
+
+    tasksContainer.innerHTML += `<div class="task">${inputValue}</div>`;
+});

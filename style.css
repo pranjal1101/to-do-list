@@ -30,6 +30,11 @@
 }
 .add-icon{
     position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+.delete-icon{
+    position: absolute;
     right: 8px;
     cursor: pointer;
 }
